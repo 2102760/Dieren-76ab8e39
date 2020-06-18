@@ -11,7 +11,6 @@ class Dier
         } else {
             echo "Ik kan niet slapen tijdens het eten.<br>";
         }
-
     }
 
     public function praat()
