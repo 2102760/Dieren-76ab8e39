@@ -1,7 +1,7 @@
 <?php
 
-require_once ('Vis.php');
-require_once ('Vogel.php');
+require_once('Vis.class.php');
+require_once('Vogel.class.php');
 
 class Freek
 {
@@ -13,8 +13,7 @@ class Freek
 
     public function geefEten($dier)
     {
-        switch (strtolower($dier))
-        {
+        switch (strtolower($dier)) {
             case 'vis':
                 $this->vis->eet();
                 break;
@@ -22,13 +21,13 @@ class Freek
                 $this->vogel->eet();
                 break;
             default:
-                echo '<b>Dier niet gevonden </b>';
+                echo '<b>Dier.class niet gevonden </b>';
         }
     }
+
     public function brengNaarBed($dier)
     {
-        switch (strtolower($dier))
-        {
+        switch (strtolower($dier)) {
             case 'vis':
                 $this->vis->slaap();
                 break;
@@ -36,7 +35,7 @@ class Freek
                 $this->vogel->slaap();
                 break;
             default:
-                echo '<b>Dier niet gevonden </b>';
+                echo '<b>Dier.class niet gevonden </b>';
         }
     }
 }

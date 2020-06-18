@@ -1,11 +1,11 @@
 <?php
 
-require_once('Vogel.php');
-require_once('Vis.php');
-require_once('Freek.php');
+require_once('Vogel.class.php');
+require_once('Vis.class.php');
+require_once('Freek.class.php');
 
 echo '<hr>';
-echo 'Vogel';
+echo 'Vogel.class';
 echo '<hr>';
 
 $vogel = new Vogel();
@@ -18,7 +18,7 @@ $vogel->praat();
 
 echo '<br>';
 echo '<hr>';
-echo 'Vis';
+echo 'Vis.class';
 echo '<hr>';
 
 $vis = new Vis();
@@ -31,13 +31,13 @@ $vis->praat();
 
 echo '<br>';
 echo '<hr>';
-echo 'Freek';
+echo 'Freek.class';
 echo '<hr>';
 
 $freek = new Freek();
-$freek->geefEten('Vis');
+$freek->geefEten('Vis.class');
 $freek->geefEten('vogel');
 $freek->geefEten('Kat');
-$freek->brengNaarBed('Vis');
+$freek->brengNaarBed('Vis.class');
 $freek->brengNaarBed('vogel');
 $freek->brengNaarBed('Kat');

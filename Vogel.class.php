@@ -1,6 +1,6 @@
 <?php
 
-require_once('dier.php');
+require_once('Dier.class.php');
 
 class Vogel extends Dier
 {

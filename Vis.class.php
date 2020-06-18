@@ -1,6 +1,5 @@
 <?php
 
-
 class Vis extends Dier
 {
     public $sleeping = false;
